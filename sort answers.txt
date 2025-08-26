@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: I run sorted10000.txt, then sorted50000.txt and came to know that as per bubble sort has lower runtime as compared to selection sort on sorted data .So on that results i concluded that sort1 uses bubble sort.
+
+sort2 uses: merge sort
+
+How do you know?: I compare the random5000.txt on all three cames that the fastest is the sort 2. Merge sort is fastest to this context that it has least runtime as compared to other on random data.
+
+sort3 uses: selection sort
+
+How do you know?: After finding the other two i was left for selection that is why i concluded that sort3 uses selection sort.
