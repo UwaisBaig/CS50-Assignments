@@ -1,0 +1,6 @@
+To calculate the aura as you stated i want to calculate the avg of energy,valence and
+danceability. I would need the Year in songs .schema .
+So if i suppose i have Year in the songs .schema so i would calculate the aura of the
+audio om this code in SQL.
+
+SELECT AVG(energy) and AVG(valence) and AVG(danceability) FROM songs WHERE year = '2018';
