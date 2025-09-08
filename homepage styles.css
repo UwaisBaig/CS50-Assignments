@@ -1,0 +1,57 @@
+body{
+    width: 80%;
+    margin: auto;
+    background-color: #FAF0FC;
+}
+
+header{
+    text-align: center;
+}
+
+nav >ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+}
+
+footer{
+    text-align: center;
+}
+
+.circle-photo{
+    border-radius: 50%;
+}
+
+.btn-purple {
+  background-color: #5a189a; /* Dark purple shade */
+  color: white;
+  border: none;
+}
+
+.btn-purple:hover {
+  background-color: #3c096c; /* Even darker on hover */
+  color: white;
+}
+
+
+.custom-purple {
+  background-color: #6a0dad; /* Dark purple */
+  color: white;             /* Makes the icon white */
+  border-radius: 8px;       /* Keep square with soft corners */
+  width: 50px;              /* Adjust size */
+  height: 50px;             /* Adjust size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark-mode {
+  background-color: black !important;
+  color: white !important;
+}

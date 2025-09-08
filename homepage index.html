@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link href="styles.css" rel="stylesheet" />
+    <title>M.Uwais Baig</title>
+  </head>
+  <body>
+    <header>
+      <h1>M.Uwais Baig</h1>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./now.html">/now</a></li>
+        </ul>
+      </nav>
+      <button onclick="runDarkness()">
+        Dark Mode
+      </button>
+    </header>
+    <main>
+      <section>
+        <div class="container col-xxl-8 px-4 py-5 cursor-hover">
+          <div
+            class="row flex-lg-row-reverse align-items-center g-5 py-5 cursor-hover"
+          >
+            <div class="col-10 col-sm-8 col-lg-6 cursor-hover">
+              <img
+                src="PFP.jpeg"
+                class="d-block mx-lg-auto img-fluid cursor-hover circle-photo"
+                alt="Bootstrap Themes"
+                width="400"
+                height="300"
+                loading="lazy"
+              />
+            </div>
+            <div class="col-lg-6 cursor-hover">
+              <h1
+                class="display-5 fw-bold text-body-emphasis lh-1 mb-3 cursor-hover"
+              >
+                Yo! I'm Uwais
+              </h1>
+              <p class="lead cursor-hover">
+                I’m a BS Computer Science student at UET Lahore, with a strong
+                interest in software engineering, AI, and cloud technologies.
+                Building on my foundation in AI from my earlier studies. I’m
+                focused on combining technical expertise with problem-solving
+                skills to create scalable, impactful solutions. I aim to bridge
+                the gap between advanced technology and practical applications
+                through full stack development, AI, and cloud-based systems.
+              </p>
+              <div
+                class="d-grid gap-2 d-md-flex justify-content-md-start cursor-hover"
+              >
+                <a href="./about.html">
+                 <button class="btn btn-purple" style="font-size:20px; padding:12px 36px;">
+                    About Me !
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container px-4 py-5" id="featured-3">
+          <h2 class="pb-2 border-bottom cursor-hover">Skills</h2>
+          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 cursor-hover">
+            <div class="feature col">
+              <div
+                class="feature-icon d-inline-flex align-items-center justify-content-center custom-purple fs-2 mb-3">
+                <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                  <use xlink:href="#collection"></use>
+                </svg>
+              </div>
+              <h3 class="fs-2 text-body-emphasis" >Python</h3>
+              <p>
+                Paragraph of text beneath the heading to explain the heading.
+                We'll add onto it with another sentence and probably just keep
+                going until we run out of words.
+              </p>
+            </div>
+            <div class="feature col">
+              <div
+               class="feature-icon d-inline-flex align-items-center justify-content-center custom-purple fs-2 mb-3" >
+
+               <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                  <use xlink:href="#people-circle"></use>
+                </svg>
+              </div>
+              <h3 class="fs-2 text-body-emphasis">AWS</h3>
+              <p>
+                Paragraph of text beneath the heading to explain the heading.
+                We'll add onto it with another sentence and probably just keep
+                going until we run out of words.
+              </p>
+            </div>
+            <div class="feature col cursor-hover">
+              <div
+                 class="feature-icon d-inline-flex align-items-center justify-content-center custom-purple fs-2 mb-3"
+              >
+                <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                  <use xlink:href="#toggles2"></use>
+                </svg>
+              </div>
+              <h3 class="fs-2 text-body-emphasis cursor-hover">
+                Gen AI
+              </h3>
+              <p class="cursor-hover">
+                Paragraph of text beneath the heading to explain the heading.
+                We'll add onto it with another sentence and probably just keep
+                going until we run out of words.
+              </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>Copyright - Uwais. 2025</footer>
+    <script>
+        function runDarkness() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
+    </script>
+  </body>
+</html>

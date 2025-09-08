@@ -1,0 +1,22 @@
+Tags Used;
+html
+head
+title
+body
+footer
+div
+section
+nav
+header
+button
+p
+ol
+ul
+li
+a
+
+JavaScript Implementation:
+In Dark Mode
+
+BootStrap Implementarion:
+hero & features
