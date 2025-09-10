@@ -1,0 +1,58 @@
+===============================
+ AzmFlow - Project Requirements
+===============================
+
+Languages & Frameworks
+----------------------
+- Python 3 (core language)
+- Flask (web framework)
+- Jinja2 (templating engine)
+- SQLite (database)
+
+Frontend
+--------
+- HTML5
+- CSS3
+- Bootstrap 5 (styling and layout)
+
+Python Libraries
+----------------
+- flask
+- flask-session
+- requests
+- sqlite3 (built-in with Python)
+
+Features Implemented
+--------------------
+- User Authentication (Register, Login, Logout)
+- To-Do List (Add, Mark Complete, Delete, Validation)
+- Website Blocker (Demo version, add/remove blocked sites)
+- Motivational Quotes (fetched from external API (ZenQuotes) )
+- Flash messages for error handling
+- Session management (per user)
+- Input validation for tasks and sites
+
+Databases
+---------
+todo.db:
+    - todos table (id, task, completed, user_id, added_at)
+blocked_sites.db:
+    - users table (id, username, hash)
+    - sites table (id, url, added_at)
+
+How to Run
+----------
+1. Install Python 3
+2. Install dependencies:
+       pip install flask flask-session requests
+3. Initialize the SQLite databases with provided schema
+4. Run the Flask server:
+       flask run
+5. Visit the site in browser:
+       http://127.0.0.1:5000
+
+Notes
+-----
+- This is the demo version of AzmFlow
+- All features work locally
+- Built for CS50 Final Project

@@ -1,0 +1,48 @@
+{% extends "layout.html" %} {% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-8">
+    <div class="card shadow-sm">
+      <div class="card-header bg-danger text-white">
+        <h4 class="mb-0">🚫 Site Blocker (Demo)</h4>
+      </div>
+      <div class="card-body">
+        <!-- Block Site Form -->
+        <form method="POST" class="d-flex mb-3">
+          <input
+            type="text"
+            name="site"
+            class="form-control me-2"
+            placeholder="Enter site to block (e.g. example.com)"
+            required
+          />
+          <button type="submit" class="btn btn-dark">Block</button>
+        </form>
+        <!-- Blocked Sites List -->
+        <ul class="list-group">
+          {% for site in blocked_sites %}
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            {{ site.url }}
+            <form method="POST" action="/remove_site" class="d-inline">
+              <input type="hidden" name="site_id" value="{{ site.id }}" />
+              <button type="submit" class="btn btn-sm btn-outline-danger">
+                Remove
+              </button>
+            </form>
+          </li>
+          {% else %}
+          <li class="list-group-item text-center">
+            <em>No sites blocked yet.</em>
+          </li>
+          {% endfor %}
+        </ul>
+        <!-- Error Message -->
+        {% if error %}
+        <div class="alert alert-danger mt-3">{{ error }}</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

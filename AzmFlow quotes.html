@@ -1,0 +1,17 @@
+{% extends "layout.html" %} {% block content %}
+<div class="container mt-5 d-flex justify-content-center">
+  <div
+    class="card shadow-lg border-0 rounded-4 text-center p-4"
+    style="max-width: 600px"
+  >
+    <div class="card-body">
+      <h2 class="card-title text-primary fw-bold">💡 Motivational Quote</h2>
+      <hr />
+      <p class="card-text fs-4 fst-italic text-dark">“{{ quote }}”</p>
+      {% if author %}
+      <p class="card-text fs-5 text-muted text-start ms-4">— {{ author }}</p>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %}

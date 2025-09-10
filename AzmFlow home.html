@@ -1,0 +1,39 @@
+{% extends "layout.html" %} {% block content %}
+<div class="container mt-4">
+  <h1 class="text-center mb-4">Welcome to AzmFlow</h1>
+  <p class="lead text-center">
+    Your Stepping Stone To Productivity And Discipline.
+  </p>
+  <div class="row mt-5">
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <div class="card-body text-center">
+          <h5 class="card-title">To-Do</h5>
+          <p class="card-text">Organize your tasks and stay productive.</p>
+          <a href="/todo" class="btn btn-primary">Go to To-Do</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <div class="card-body text-center">
+          <h5 class="card-title">Quotes</h5>
+          <p class="card-text">Get inspired with a motivational quote.</p>
+          <a href="/quotes" class="btn btn-success">Get Quotes</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <div class="card-body text-center">
+          <h5 class="card-title">Blocker (Demo)</h5>
+          <p class="card-text">Block distractions and focus on work.</p>
+          <a href="/blocker" class="btn btn-danger">Open Blocker</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
